@@ -1,7 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+body{
+  background-color: blueviolet;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,11 +40,77 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app {
+  display: flex;
 }
+
+.search input {
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 5px 0;
+}
+.user-info {
+  border:1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.user-info img {
+  height: 200px;
+  border-radius: 25px;
+}
+.user-info h1 {
+  font-size: 25px;
+  text-align: center;
+  color: brown;
+  margin: 5px;
+}
+a {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+a:hover{
+  color: crimson;
+}
+.repos-info{
+  list-style: none;
+}
+.user-info {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  background-color: black;
+  color: aliceblue;
+  width: 150px;
+  border: 1px solid salmon;
+  height: 40px;
+  margin: 25px;
+  border-radius: 5px;
+
+}
+.all-repos{
+  display: flex;
+}
+.repos{
+  margin: 0 20px;
+}
+.repos ul {
+  list-style: none;
+  line-height: 1.8em;
+}
+.starred{
+  margin: 0 20px;
+}
+.starred ul {
+  list-style: none;
+  line-height: 1.8em;
+}
+
+
